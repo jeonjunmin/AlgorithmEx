@@ -31,6 +31,8 @@ public class Ex1_이분탐색_입국심사2 {
         
         while(left <= right){
             mid = (left + right) / 2;
+            System.out.println("===============================================================");
+            System.out.println("===============================================================");
             System.out.println("left==>"+left+"   right===>"+right+"  mid===>"+mid+"    ans===>"+ans);
             if(isPassed(times, n, mid)){
                 ans = ans > mid ? mid : ans;
@@ -38,6 +40,7 @@ public class Ex1_이분탐색_입국심사2 {
             } else {
                 left = mid + 1;
             }
+            System.out.println("left==>"+left+"   right===>"+right+"  mid===>"+mid+"    ans===>"+ans);
         }
         return ans;
     }
@@ -46,7 +49,7 @@ public class Ex1_이분탐색_입국심사2 {
         long amount = 0;
         
         for(int i = 0 ; i < times.length ; ++i){
-        	System.out.println(mid / times[i]);
+        	System.out.println("n===>"+n+"  mid===>"+mid+"  times[i]===>"+times[i]+"  mid/times["+i+"]===>"+mid / times[i]);
             amount += mid / times[i];
         }
         System.out.println("amount:"+amount+"   n:"+n);
