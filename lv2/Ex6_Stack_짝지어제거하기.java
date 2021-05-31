@@ -6,8 +6,8 @@ public class Ex6_Stack_짝지어제거하기 {
 
 	public static void main(String[] args) {
 		
-//		String s = "baabaa";
-		String s = "cdcd";
+		String s = "baabaa";
+//		String s = "cdcd";
 		
 		
 		System.out.println("result===>"+solution(s));
@@ -41,13 +41,7 @@ public class Ex6_Stack_짝지어제거하기 {
 			
 		}
 		
-		
-		if(data.isEmpty()){
-			answer = 1;
-		}else{
-			answer = 0;
-		}
-		
+		answer = data.isEmpty() ? 1 : 0;
 		
         return answer;
 	}
