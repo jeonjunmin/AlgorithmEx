@@ -1,6 +1,6 @@
 package lv1;
 
-public class Ex8_Greedy_음양더하기 {
+public class Ex8_배열반복_음양더하기 {
 
 	public static void main(String[] args) {
 		int[] absolutes = {4,7,12};
