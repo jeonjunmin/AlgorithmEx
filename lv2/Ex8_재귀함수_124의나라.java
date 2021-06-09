@@ -7,7 +7,7 @@ public class Ex8_재귀함수_124의나라 {
 
 	public static void main(String[] args) {
 		
-		int n = 4;
+		int n = 11;
 		
 		
 		System.out.println("result===>"+solution(n));
@@ -18,94 +18,90 @@ public class Ex8_재귀함수_124의나라 {
 	public static String solution(int n) {
 		String answer = "";
 		
-		String [] a = {"1","2","4"}; 
+		String [] temp = {"4","1","2"}; 
 		
-		int i =3;
-		int pow = 1;
-		while(true){
-			pow++;
-			i*=3;
-			if(i>n){
-				System.out.println("n:"+n+"   i:"+i+"   pow:"+pow);
-				break;
+		
+		while(n > 0){
+			System.out.println("n==>>"+n);
+			System.out.println(n%3);
+//			System.out.println(i/3);
+//			System.out.println("!!"+a[i%3]);
+			
+			int remainder = n % 3 ;
+			n /= 3;
+			
+			if(remainder == 0){
+				n--;
 			}
-				
-		};
-		
-		
-		for(int j = 0 ; j < pow ; j++){
-			answer = a[j];
-			for(String b : a){
-				answer+=b;
-			}
+			
+			answer = temp[remainder] + answer;
+			
 		}
 		
-		
-		
-		
-		
-		answer = a[0];
-		System.out.println(answer);
-		answer = a[1];
-		System.out.println(answer);
-		answer = a[2];
-		System.out.println(answer);
-		////////////////////////////////////////////
-		answer = a[0];
-		answer += a[0];
-		System.out.println(answer);
-		answer = a[0];
-		answer += a[1];
-		System.out.println(answer);
-		answer = a[0];
-		answer += a[2];
-		System.out.println(answer);
-		
-		answer = a[1];
-		answer += a[0];
-		System.out.println(answer);
-		answer = a[1];
-		answer += a[1];
-		System.out.println(answer);
-		answer = a[1];
-		answer += a[2];
-		System.out.println(answer);
-		
-		answer = a[2];
-		answer += a[0];
-		System.out.println(answer);
-		answer = a[2];
-		answer += a[1];
-		System.out.println(answer);
-		answer = a[2];
-		answer += a[2];
-		System.out.println(answer);
-		///////////////////////////////////////////////////////
-		answer = a[0];
-		answer += a[0];
-		answer += a[0];
-		System.out.println(answer);
-		answer = a[0];
-		answer += a[0];
-		answer += a[1];
-		System.out.println(answer);
-		answer = a[0];
-		answer += a[0];
-		answer += a[2];
-		System.out.println(answer);
-		
-		answer = a[0];
-		answer += a[1];
-		answer += a[0];
-		System.out.println(answer);
-		answer = a[0];
-		answer += a[1];
-		answer += a[1];
-		System.out.println(answer);
-		answer = a[0];
-		answer += a[1];
-		answer += a[2];
-		System.out.println(answer);
+//		String [] a = {"1","2","4"}; 
+//		System.out.println("===========================================");
+//		answer = a[0];
+//		System.out.println(answer);
+//		answer = a[1];
+//		System.out.println(answer);
+//		answer = a[2];
+//		System.out.println(answer);
+//		////////////////////////////////////////////
+//		answer = a[0];
+//		answer += a[0];
+//		System.out.println(answer);
+//		answer = a[0];
+//		answer += a[1];
+//		System.out.println(answer);
+//		answer = a[0];
+//		answer += a[2];
+//		System.out.println(answer);
+//		
+//		answer = a[1];
+//		answer += a[0];
+//		System.out.println(answer);
+//		answer = a[1];
+//		answer += a[1];
+//		System.out.println(answer);
+//		answer = a[1];
+//		answer += a[2];
+//		System.out.println(answer);
+//		
+//		answer = a[2];
+//		answer += a[0];
+//		System.out.println(answer);
+//		answer = a[2];
+//		answer += a[1];
+//		System.out.println(answer);
+//		answer = a[2];
+//		answer += a[2];
+//		System.out.println(answer);
+//		///////////////////////////////////////////////////////
+//		answer = a[0];
+//		answer += a[0];
+//		answer += a[0];
+//		System.out.println(answer);
+//		answer = a[0];
+//		answer += a[0];
+//		answer += a[1];
+//		System.out.println(answer);
+//		answer = a[0];
+//		answer += a[0];
+//		answer += a[2];
+//		System.out.println(answer);
+//		
+//		answer = a[0];
+//		answer += a[1];
+//		answer += a[0];
+//		System.out.println(answer);
+//		answer = a[0];
+//		answer += a[1];
+//		answer += a[1];
+//		System.out.println(answer);
+//		answer = a[0];
+//		answer += a[1];
+//		answer += a[2];
+//		System.out.println(answer);
 		
 		
 		
